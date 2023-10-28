@@ -1,17 +1,16 @@
 const pencil = document.getElementById("pencil");
 let isPencilActive = false ;
 
-const colorPicker = document.getElementById("color-picker");
+// const colorPicker = document.getElementById("color-picker");
 
 
-colorPicker.addEventListener("change", () => {
-    drawingColor = colorPicker.value ;
-   console.log(drawingColor);
-});
+// colorPicker.addEventListener("change", () => {
+//     drawingColor = colorPicker.value ;
+// });
 
 function onPencilClick() {
     pencil.classList.toggle("active")
-    isPencilActive = !isPencilActive ;
+    isPencilActive = !isPencilActive ; 
     if(isPencilActive) {
         canvas.style.cursor = "crosshair";
         canvas.addEventListener("mousedown", onMouseDown); 
@@ -21,4 +20,5 @@ function onPencilClick() {
         canvas.removeEventListener("mousedown", onMouseDown)
     }
 }
+
 pencil.addEventListener("click", onPencilClick) ;

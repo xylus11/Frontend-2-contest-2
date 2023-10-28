@@ -28,9 +28,11 @@ header {
 }
 .sidebar {
   display: flex;
+  flex: 1;
 }
 .dropdown > button:hover {
   cursor: pointer;
+  background-color: #ececf3;
 }
 .dropdown > button {
   padding: 8px;
@@ -52,6 +54,7 @@ header {
   background-color: white;
   position: relative;
   box-shadow: 0px 0px 5px black;
+  flex: 1.5;
 }
 .vertical-line {
   height: 30px;
@@ -92,6 +95,7 @@ i {
   align-items: center;
   width: 120px;
   margin-right: 25px;
+  flex: 1;
 }
 .header-right > button {
   padding: 15px;
@@ -195,7 +199,7 @@ footer {
   border-radius: 10px;
 }
 .undo-forward > button:hover {
-  background-color: #b8b8b8;
+  background-color: rgb(243, 239, 239);
   border-radius: 10p;
   cursor: pointer;
 }
@@ -213,14 +217,14 @@ footer {
   z-index: 100;
 }
 .footer-zoom > button:hover {
-  background-color: #c2c2c2;
+  background-color: rgb(243, 239, 239);
   cursor: pointer;
 }
 .shield-image {
   font-size: 15px;
   color: #605cdb;
 }
-.shield-image:hover{
+.shield-image:hover {
   cursor: pointer;
 }
 .question-image {
@@ -234,6 +238,21 @@ footer {
 .question-image:hover {
   background-color: rgb(243, 239, 239);
   cursor: pointer;
+}
+.form {
+  position: fixed;
+  left: 10px;
+  top: 30vh ;
+  border: 1px solid #ededed;
+  padding: 20px; 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.hide {
+  display: none;
 }
 
 @media screen and (max-width: 837px) {
